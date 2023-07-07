@@ -1,0 +1,17 @@
+{% load static %}
+
+  <aside class="left-sidebar scrollable ps-container ps-theme-default ps-active-y" data-sidebarbg="skin5">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav" class="p-t-30">
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href={% url 'carparkman:dashboard' %} aria-expanded="false"><i class="mdi mdi-view-carparkman"></i><span class="hide-menu">Dashboard</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href={% url 'carparkman:charts' %} aria-expanded="false"><i class="mdi mdi-car"></i><span class="hide-menu">Vehicle</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href={% url 'carparkman:widgets' %} aria-expanded="false"><i class="mdi mdi-parking"></i><span class="hide-menu">Parking Slot</span></a></li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>

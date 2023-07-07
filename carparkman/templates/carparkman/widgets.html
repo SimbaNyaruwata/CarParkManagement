@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+{% block extra_css %}
+    <style xmlns="http://www.w3.org/1999/html">
+    </style>
+{% endblock %}
+{% block page_title %}
+ Widgets
+{% endblock %}
+
+{% block content %}
+    <form action="{% url 'widgets' %}" method="post">
+
+                {% csrf_token %}
+    
+    <div class="page-breadcrumb">
+        <div class="row">
+            <div class="col-12 d-flex no-block align-items-center">
+                <h4 class="page-title">Parking Slots</h4>
+                <div class="ml-auto text-right">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="container-fluid">
+
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-body">
+            <button type="submit" class="btn btn-secondary btn-lg">View Car Park</button>
+            
+</div>  
+    </div>
+        </div>
+</div>
+        <script>
+           
+        </script>
+
+        
+    </div>
+</form>
+{% endblock %}
